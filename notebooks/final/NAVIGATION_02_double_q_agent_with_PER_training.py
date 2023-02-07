@@ -272,7 +272,7 @@ for episode in range(1, n_episodes+1):
         print("\n")
         print(f"## ENVIRONMENT SOLVED ##")
         print(f"  - Number of Episodes: {episode - 100}")
-        print(f"  - Average Score: {mean(score_window)}")
+        print(f"  - Average Score: {mean(scores_window)}")
         model_file_name = agent.save_model()
         print(f"  - Model Was Saved Into File: {model_file_name}")
         break
